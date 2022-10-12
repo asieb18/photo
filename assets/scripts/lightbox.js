@@ -1,7 +1,3 @@
-// 
-// Part 1: Fill in the function unhideLightbox. Afterwards, we will make this function run when a picture is clicked on.
-// 
-
 /**
  * Makes lightbox overlay visible, and shows the lightbox pop-up corresponding to the id
  *
@@ -11,7 +7,6 @@
 	// This removes the .hidden class from the #lightbox-overlay div
 	document.getElementById('lightbox-overlay').classList.remove('hidden');
 
-	// TODO: Remove the .hidden class from the div with the given id
 	lightboxID.classList.remove('hidden');
 }
 
@@ -24,63 +19,119 @@
  * Calls unhideLightbox with the id of the first lightbox
  */
 function unhideLightbox1() {
-	// TODO: Look in q2.html to see what the id for the lightbox div for the first picture, and call unhideLightbox
 	let im1 = document.getElementById("im1");
 	unhideLightbox(im1);
 }
 
-// TODO: Set the browser to run the function unhideLightbox1 when someone clicks #picture-1
 document.getElementById("picture-1").onclick = unhideLightbox1;
-
-
-// TODO: do the same for #picture-2, write a function and then make it run on click
 
 /**
  * Calls unhideLightbox with the id of the second lightbox
  */
  function unhideLightbox2() {
-	// TODO: Look in q2.html to see what the id for the lightbox div for the first picture, and call unhideLightbox
 	let im2 = document.getElementById("im2");
 	unhideLightbox(im2);
 }
 
-// TODO: Set the browser to run the function unhideLightbox1 when someone clicks #picture-2
 document.getElementById("picture-2").onclick = unhideLightbox2;
-
-
-
-// TODO: do the same for #picture-3, write a function and then make it run on click
 
 /**
  * Calls unhideLightbox with the id of the third lightbox
  */
  function unhideLightbox3() {
-	// TODO: Look in q2.html to see what the id for the lightbox div for the first picture, and call unhideLightbox
 	let im3 = document.getElementById("im3");
 	unhideLightbox(im3);
 }
 
-// TODO: Set the browser to run the function unhideLightbox1 when someone clicks #picture-2
 document.getElementById("picture-3").onclick = unhideLightbox3;
 
 
+// PHOTO 
+function unhideLightbox4() {
+	let im4 = document.getElementById("im4");
+	unhideLightbox(im4);
+}
+
+document.getElementById("picture-4").onclick = unhideLightbox4;
+
+// PHOTO 
+function unhideLightbox5() {
+	let im5 = document.getElementById("im5");
+	unhideLightbox(im5);
+}
+
+document.getElementById("picture-5").onclick = unhideLightbox5;
+
+// PHOTO 
+function unhideLightbox6() {
+	let im6 = document.getElementById("im6");
+	unhideLightbox(im6);
+}
+
+document.getElementById("picture-6").onclick = unhideLightbox6;
+
+// PHOTO 
+function unhideLightbox7() {
+	let im7 = document.getElementById("im7");
+	unhideLightbox(im7);
+}
+
+document.getElementById("picture-7").onclick = unhideLightbox7;
+
+// PHOTO 
+function unhideLightbox8() {
+	let im8 = document.getElementById("im8");
+	unhideLightbox(im8);
+}
+
+document.getElementById("picture-8").onclick = unhideLightbox8;
+
+// PHOTO 
+function unhideLightbox9() {
+	let im9 = document.getElementById("im9");
+	unhideLightbox(im9);
+}
+
+document.getElementById("picture-9").onclick = unhideLightbox9;
+
+
+// PHOTO 
+function unhideLightbox10() {
+	let im10 = document.getElementById("im10");
+	unhideLightbox(im10);
+}
+
+document.getElementById("picture-10").onclick = unhideLightbox10;
+
+
 // 
-// Part 3: Now we need to be able to close the lightbox when we click outside the picture!
+// close the lightbox when we click outside the picture
 // 
 function closeLightbox(lightboxID) {
-	// This adds the .hidden class to the #lightbox-overlay div
+	// Adds the .hidden class to the #lightbox-overlay div
 	document.getElementById('lightbox-overlay').classList.add('hidden');
-
-	// TODO: Add the .hidden class to the div with the given id
-	// lightboxID.classList.add('hidden');
 
 	let im1 = document.getElementById("im1");
 	let im2 = document.getElementById("im2");
 	let im3 = document.getElementById("im3");
+	let im4 = document.getElementById("im4");
+	let im5 = document.getElementById("im5");
+	let im6 = document.getElementById("im6");
+	let im7 = document.getElementById("im7");
+	let im8 = document.getElementById("im8");
+	let im9 = document.getElementById("im9");
+	let im10 = document.getElementById("im10");
 
 	im1.classList.add('hidden');
 	im2.classList.add('hidden');
 	im3.classList.add('hidden');
+	im4.classList.add('hidden');
+	im5.classList.add('hidden');
+	im6.classList.add('hidden');
+	im7.classList.add('hidden');
+	im8.classList.add('hidden');
+	im9.classList.add('hidden');
+	im10.classList.add('hidden');
 }
 
 
@@ -98,5 +149,4 @@ function closeAllLightboxes() {
 	}
 }
 
-// TODO: set the closeAllLightboxes function to run when #lightbox-overlay is clicked on.
 document.getElementById("lightbox-overlay").onclick = closeAllLightboxes;
