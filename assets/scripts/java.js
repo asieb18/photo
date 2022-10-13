@@ -1,17 +1,18 @@
 // PLAY SONG
-var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: 'violet',
-    progressColor: 'purple'
-});
-
-wavesurfer.load('Kero Kero Bonito - Big City.mp3');
-
+var song = document.getElementById("song");
 var icon = document.getElementById("icon");
 
 icon.onclick = function(){
-	wavesurfer.playPause();
+	if (song.paused){
+		song.play();
+		icon.src = "assets/images/pause.png"
+	} else {
+		song.pause();
+		icon.src = "assets/images/play.png"
+	}
+	
 }
+
 
 
 /**
