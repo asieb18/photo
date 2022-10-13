@@ -1,3 +1,19 @@
+// PLAY SONG
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+
+wavesurfer.load('Kero Kero Bonito - Big City.mp3');
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+	wavesurfer.playPause();
+}
+
+
 /**
  * Makes lightbox overlay visible, and shows the lightbox pop-up corresponding to the id
  *

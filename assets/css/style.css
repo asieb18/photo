@@ -51,9 +51,9 @@ img {
 
 /* Hover Transparency images */
 #pictures img:hover {
-    opacity: 60%;
+    opacity: 70%;
     transition: 0.7s;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 
@@ -115,3 +115,38 @@ img:hover{
 */
 
 /* Lightbox */
+
+
+/* MUSIC PLAY BUTTON 
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #a9a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+.music{
+    width: 90%;
+    max-width: 900px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(red, 0, 0, 0.4);
+    color: #555;
+    background: white;
+    border-radius: 8px;
+}
+.track {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+#icon {
+    display: flex;
+    width: 70px;
+    margin-right: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+#icon:hover {
+    opacity: 0.4;
+}
