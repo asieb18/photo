@@ -1,34 +1,62 @@
 body {
     font-family: 'Work Sans', sans-serif;
+    height: 100%;
 }
 
 h2 {
     font-size: 24pt;
+    padding: 0pt;
+    margin-bottom: 0pt;
+}
+
+p {
+    font-size: 14pt;
 }
 
 img {
     width:100%;
-    max-width:600px;
+    max-width: 500px;
     padding-bottom: 7px;
+}
+
+#h {
+    max-width: 500px;
+}
+
+#v {
+    max-width: 380px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
-
+    padding: 0 15px;
     justify-content: center;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
+
     flex: 25%;
-    max-width: 27%;
-    padding: 0 7px;
+    max-width: 26%;
+    padding: 0 12px;
+}
+
+.column4 {
+    display: none;
+    flex: 25%;
+    max-width: 20%;
+    padding: 0 11px;
+}
+
+.column4 img {
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .column img {
-    margin-top: 7px;
+    margin-top: 15px;
     vertical-align: middle;
     width: 100%;
 }
@@ -49,11 +77,21 @@ img {
     }
 }
 
-/* Hover Transparency images */
+/* Hover Transparency images 
 #pictures img:hover {
     opacity: 70%;
     transition: 0.7s;
-    /*cursor: pointer;*/
+    cursor: pointer;
+}*/
+
+#pictures img:hover {
+    transform-origin: center;
+    animation: scale 500ms ease-in-out forwards;
+}
+@keyframes scale {
+    to {
+        transform: scale(1.08);
+    }   
 }
 
 #icon {
@@ -72,47 +110,6 @@ img {
 }
 
 
-/* LIGHTBOX */
-.hidden {
-    display: none;
-}
-#lightbox-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    justify-content: center;
-    align-items: center;
-}
-.lightbox {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-35%, -50%);
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-}
-.lightbox img {
-    width: 90%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    justify-content: center;
-    align-items: center;
-}
-/*
-.lightbox .caption {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20px;
-    background: white;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}*/
-
-
 /*
 img{
     filter: grayscale(100%);
@@ -128,8 +125,6 @@ img:hover{
     transition: 1s ease;
 }
 */
-
-/* Lightbox */
 
 
 /* MUSIC PLAY BUTTON 
@@ -155,3 +150,8 @@ img:hover{
     align-items: center;
     margin-top: 20px;
 }*/
+
+/* Lyric Section Format */
+.lyrics {
+    text-align: center;
+}
